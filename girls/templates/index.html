@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% for rs in category %}
+    {{rs.title}}<br>
+    <!-- {{rs.keywords}}<br>
+    {{rs.description}}<br> -->
+    {% endfor %}
+<h1>Kizlar</h1>
+    {% for rs in girls %}
+<h1>{{rs.first_name}}</h1>
+<h1>{{rs.last_name}}</h1>
+<h2>{{rs.category}}</h2>
+<h2>{{rs.heigth}}</h2>
+<h3>{{rs.hair}}</h3>
+<h3>{{rs.color}}</h3>
+<img src="{{rs.image.url}}" alt="" style="height: 400px;">
+
+    {% endfor %}
+</body>
+</html>
